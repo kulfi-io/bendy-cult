@@ -1,0 +1,405 @@
+.App {
+    text-align: center;
+}
+
+.App-logo {
+    height: 40vmin;
+    pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+        animation: App-logo-spin infinite 20s linear;
+    }
+}
+header {
+    z-index: 10;
+    text-align: center;
+    color: #f7cb47;
+}
+
+header p {
+    background-color: transparent;
+}
+
+.App-header {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+}
+
+.App-link {
+    color: #61dafb;
+}
+
+.wrapper {
+    background: url(assets/images/bendy-bg.jpeg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    overflow: hidden;
+    max-width: 100vw;
+    max-height: 100vh;
+}
+
+.bendy-insta img {
+    content: url("assets/images/bendy-insta.png");
+    max-height: 35px;
+    max-width: 35px;
+}
+
+.bendy-cult {
+    z-index: 9;
+    align-content: center;
+}
+.bendy-cult img {
+    content: url(assets/images/bendy-cult.png);
+    max-height: 90vh;
+    min-height: 90vh;
+    max-width: 100vw;
+    min-width: 100vw;
+    margin-top: 3vh;
+    margin-left: 3vw;
+}
+
+.bendy-area {
+    max-height: 50vh;
+    max-width: 100vw;
+    z-index: 10;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+}
+
+.bendy-area .item {
+    max-height: 50vh;
+    margin: auto;
+    display: block;
+}
+
+.bendy-area.top {
+    margin-top: -83vh;
+}
+
+.bendy-area.bottom {
+    margin-top: 35vh;
+}
+
+.bendy-cult-dancer {
+    background: url(assets/images/bendy-cult-dancer.png) no-repeat center center
+        fixed;
+    max-width: 100vw;
+    max-height: 100vh;
+    min-height: 100vh;
+}
+
+.bendy-content {
+    color: #f7cb47;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.bendy-content p {
+    line-height: 5px;
+}
+
+.bendy-content.left {
+    text-align: left;
+}
+
+.bendy-content.right {
+    text-align: right;
+}
+
+footer {
+    z-index: 10;
+    color: #6e7476;
+    text-align: center;
+    font-size: 24px;
+}
+
+@keyframes App-logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* ----------- desktop ----------- */
+@media screen and (min-width: 1680px) and (orientation: landscape) {
+    .bendy-cult img {
+        margin-left: 10vw;
+        max-width: 85vw;
+        min-width: 85vw;
+    }
+
+    footer {
+        font-size: 40px;
+    }
+
+
+}
+
+/* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
+
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
+}
+
+/* Portrait */
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+    .bendy-content {
+        font-size: 0.8rem;
+    }
+
+    header,
+    footer {
+        font-size: 14px;
+    }
+
+    .bendy-area.bottom {
+        margin-top: 40vh;
+    }
+
+    .bendy-insta img {
+        max-height: 20px;
+        max-width: 20px;
+    }
+}
+
+/* Landscape */
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+}
+
+/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
+}
+
+/* Portrait */
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+    .bendy-content {
+        font-size: 0.9rem;
+    }
+
+    header,
+    footer {
+        font-size: 14px;
+    }
+
+    .bendy-area.bottom {
+        margin-top: 45vh;
+    }
+
+    .bendy-insta img {
+        max-height: 20px;
+        max-width: 20px;
+    }
+}
+
+/* Landscape */
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+}
+
+/* ----------- iPhone 6+, 7+ and 8+ ----------- */
+
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) {
+}
+
+/* Portrait */
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
+    .bendy-content {
+        font-size: 0.95rem;
+    }
+
+    header,
+    footer {
+        font-size: 14px;
+    }
+
+    .bendy-area.bottom {
+        margin-top: 50vh;
+    }
+
+    .bendy-insta img {
+        max-height: 20px;
+        max-width: 20px;
+    }
+}
+
+/* Landscape */
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
+}
+
+/* ----------- iPhone X ----------- */
+
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
+}
+
+/* Portrait */
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
+    .bendy-content {
+        font-size: 1rem;
+    }
+
+    header,
+    footer {
+        font-size: 14px;
+    }
+
+    .bendy-area.bottom {
+        margin-top: 50vh;
+    }
+
+    .bendy-insta img {
+        max-height: 20px;
+        max-width: 20px;
+    }
+}
+
+/* Landscape */
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
+}
+
+/* ----------- iPad 1, 2, Mini and Air ----------- */
+
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+}
+
+/* Portrait */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
+    .bendy-content {
+        font-size: 1.5rem;
+    }
+
+    header,
+    footer {
+        font-size: 14px;
+    }
+
+    .bendy-area.bottom {
+        margin-top: 50vh;
+    }
+
+    .bendy-insta img {
+        max-height: 20px;
+        max-width: 20px;
+    }
+}
+
+/* Landscape */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
+}
+
+/* ----------- iPad 3, 4 and Pro 9.7" ----------- */
+
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
+}
+
+/* Portrait */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+    .bendy-content {
+        font-size: 1.5rem;
+    }
+
+    header,
+    footer {
+        font-size: 16px;
+    }
+
+    .bendy-area.bottom {
+        margin-top: 50vh;
+    }
+
+    .bendy-insta img {
+        max-height: 20px;
+        max-width: 20px;
+    }
+}
+
+/* Landscape */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
+}
+
+/* ----------- iPad Pro 10.5" ----------- */
+
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 834px) and (max-device-width: 1112px) and (-webkit-min-device-pixel-ratio: 2) {
+}
+
+/* Portrait */
+/* Declare the same value for min- and max-width to avoid colliding with desktops */
+/* Source: https://medium.com/connect-the-dots/css-media-queries-for-ipad-pro-8cad10e17106*/
+@media only screen and (min-device-width: 834px) and (max-device-width: 834px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+    .bendy-content {
+        font-size: 1.5rem;
+    }
+
+    header,
+    footer {
+        font-size: 20px;
+    }
+
+    .bendy-area.bottom {
+        margin-top: 50vh;
+    }
+
+    .bendy-insta img {
+        max-height: 20px;
+        max-width: 20px;
+    }
+}
+
+/* Landscape */
+/* Declare the same value for min- and max-width to avoid colliding with desktops */
+/* Source: https://medium.com/connect-the-dots/css-media-queries-for-ipad-pro-8cad10e17106*/
+@media only screen and (min-device-width: 1112px) and (max-device-width: 1112px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
+}
+
+/* ----------- iPad Pro 12.9" ----------- */
+
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) {
+}
+
+/* Portrait */
+/* Declare the same value for min- and max-width to avoid colliding with desktops */
+/* Source: https://medium.com/connect-the-dots/css-media-queries-for-ipad-pro-8cad10e17106*/
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+    .bendy-content {
+        font-size: 1.9rem;
+    }
+
+    header,
+    footer {
+        font-size: 24px;
+    }
+
+    .bendy-area.bottom {
+        margin-top: 51vh;
+    }
+
+    .bendy-insta img {
+        max-height: 35px;
+        max-width: 35px;
+    }
+}
+
+/* Landscape */
+/* Declare the same value for min- and max-width to avoid colliding with desktops */
+/* Source: https://medium.com/connect-the-dots/css-media-queries-for-ipad-pro-8cad10e17106*/
+@media only screen and (min-device-width: 1366px) and (max-device-width: 1366px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
+}
